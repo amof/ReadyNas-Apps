@@ -1,0 +1,12 @@
+[Unit] 
+Description=Seafile 
+
+[Service] 
+Type=oneshot 
+ExecStart=/home/seafile/seafile_launch.sh start 
+ExecStop=/home/seafile/seafile_launch.sh stop 
+RemainAfterExit=yes 
+User=root 
+
+[Install] 
+WantedBy=multi-user.target
